@@ -35,11 +35,11 @@ chmod a+x script.sh
  - Test the load balancer by executing some random curl commands on the HAProxy IP to check the response from both web servers
 
  ```sh
-curl 172.16.0.2
+curl 192.168.0.2
 ```
 
  - Benchmark the web servers by sending a punch of requests directly:
 
  ```sh
-ab -n 3000 -c 20 http://172.16.0.2/
+ab -n 3000 -c 20 http://192.168.0.2/
 ```
