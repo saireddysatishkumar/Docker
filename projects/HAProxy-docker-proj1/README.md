@@ -18,5 +18,6 @@ docker container run --name app -p 8080:8080 -d -t -i spaceuptech/greeter
 
 ## build image and Run HAProxy container
 cd haproxy
-
+docker build . -t haproxy1
+docker run -p 3333:9080 my-app
 
